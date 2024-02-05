@@ -6,3 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
         navList.classList.toggle('active');
     });
 });
+
+document.getElementById("loginBtn").addEventListener("click", function() {
+    var loginForm = document.getElementById("loginForm");
+    loginForm.style.display = (loginForm.style.display === "none" || loginForm.style.display === "") ? "block" : "none";
+});
