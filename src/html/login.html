@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Merriweather:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/tailwind.css">
-    <title>CompraCifras</title>
+    <title>CompraCifras - Login</title>
 </head>
 
 <script src="/src/scripts/script.js"></script>
@@ -27,15 +27,20 @@
                 <li><a href="/src/html/musicas.html">Músicas</a></li>
                 <li><a href="#">Carrinho</a></li>
             </ul>
-            <li><a href="/src/html/login.html">Login</a></li>
+            <li id="loginBtn">Login</li>
         </nav>
     </div>
 
-    <section>
-        <div class="conteudo">
-            <h1>Compre, toque, emocione. <span>CompraCifras</span>, sua loja de melodias online.</h1>
-            <a href="/src/html/musicas.html">Confira!</a>
-        </div>
-    </section>
+    <div id="loginForm" class="login">
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    
 </body>
 </html>

@@ -6,6 +6,10 @@
     font-family: 'Merriweather', serif;
 }
 
+body {
+    background-color: #6bd9bc;
+}
+
 h1 {
     color: #ffffff;
 }
@@ -109,61 +113,16 @@ nav img {
     border-radius: 2px;
 }
 
-section {
-    position: relative;
-    height: 100vh;
-    background: url('/src/img/girlmusic') center/cover no-repeat; /* Adaptação da imagem como plano de fundo */
+
+.login {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    align-items: collum;
 }
 
-.conteudo {
-    border-radius: 10px;
-    background-color: #F3F7F2; 
-    padding: 20px;
-    margin-right: 15%;
-    text-align: center; 
-    max-width: 80%;
-    box-shadow: 0 0 10px #1a5f5f;
-}
 
-section h1 {
-    font-size: larger;
-    font-family: 'Kanit', sans-serif;
-    color: #010135;
-    margin-bottom: 20px;
-}
 
-section span {
-    font-family: 'Kanit', sans-serif;
-    color: #079a73;
-}
 
-section img {
-    width: 40%;
-    height: auto;
-    object-fit: cover;
-}
 
-section a {
-    font-size: larger;
-    font-family: 'Kanit', sans-serif;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 10px 20px;
-    display: inline-block;
-    background-color: #010135 ;
-    border-radius: 5px;
-    box-shadow: 0px 3px 2px #406696;
-    margin: 20px;
-    transition: transform 0.5s ease;
-}
-
-section a:hover {
-    transform: scale(1.1);
-    transition: scale 0.3s ease; 
-}
 
 @media screen and (max-width:768px) {
 
@@ -190,14 +149,4 @@ section a:hover {
     nav {
         padding-bottom: px;
     }
-
-    section {
-        align-items: center;
-    }
-
-    .conteudo {
-        margin: 20px;
-        max-width: 100%;
-    }
-    
 }
